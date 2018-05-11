@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body style="background: #fff;">
+	<header class="mui-bar mui-bar-nav">
+		<button class="mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left">
+			<span class="mui-icon mui-icon-left-nav"></span>
+			返回
+		</button>
+	    <a class="mui-icon mui-icon-more mui-pull-right"></a>
+	    <h1 class="mui-title">分类</h1>
+	</header>
+	<div class="mui-content class-body" style="background: #fff;">
+	    <div class="left-mn">
+	    		<a class="ahover">掌柜推荐</a>
+	    		<a>美味主食</a>
+	    		<a>精选套餐</a>
+	    		<a>招牌菜</a>
+	    		<a>特色汤品</a>
+	    		<a>风味凉菜</a>
+	    		<a>异域美食</a>
+	    		<a>精品小吃</a>
+	    		<a>经典咖啡</a>
+	    		<a>醇香奶茶</a>
+	    		<a>维C果园</a>
+	    </div>
+	    <div class="right-mn">
+	    		<div class="wdiv" style="display: block;">
+	    			<div class="listdiv">
+	    				<img src="images/1.png" alt="" />
+	    				<div>
+	    					<h4>面条</h4>
+	    					<p>月售466 赞18</p>
+	    					<h4 class="price"><span class="rmb">¥</span>22<span class="plus">+</span></h4>
+	    				</div>
+	    			</div>
+	    			<div class="listdiv">
+	    				<img src="images/1.png" alt="" />
+	    				<div>
+	    					<h4>面条</h4>
+	    					<p>月售466 赞18</p>
+	    					<h4 class="price"><span class="rmb">¥</span>22<span class="plus">+</span></h4>
+	    				</div>
+	    			</div>
+	    			<div class="listdiv">
+	    				<img src="images/1.png" alt="" />
+	    				<div>
+	    					<h4>面条</h4>
+	    					<p>月售466 赞18</p>
+	    					<h4 class="price"><span class="rmb">¥</span>22<span class="plus">+</span></h4>
+	    				</div>
+	    			</div>
+	    			<div class="listdiv">
+	    				<img src="images/1.png" alt="" />
+	    				<div>
+	    					<h4>面条</h4>
+	    					<p>月售466 赞18</p>
+	    					<h4 class="price"><span class="rmb">¥</span>22<span class="plus">+</span></h4>
+	    				</div>
+	    			</div>
+	    			<div class="listdiv">
+	    				<img src="images/1.png" alt="" />
+	    				<div>
+	    					<h4>面条</h4>
+	    					<p>月售466 赞18</p>
+	    					<h4 class="price"><span class="rmb">¥</span>22<span class="plus">+</span></h4>
+	    				</div>
+	    			</div>
+	    			<div class="listdiv">
+	    				<img src="images/1.png" alt="" />
+	    				<div>
+	    					<h4>面条</h4>
+	    					<p>月售466 赞18</p>
+	    					<h4 class="price"><span class="rmb">¥</span>22<span class="plus">+</span></h4>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="wdiv">美味主食</div>
+	    		<div class="wdiv">精选套餐</div>
+	    		<div class="wdiv">招牌菜</div>
+	    		<div class="wdiv">特色汤品</div>
+	    		<div class="wdiv">风味凉菜</div>
+	    		<div class="wdiv">异域美食</div>
+	    		<div class="wdiv">精品小吃</div>
+	    		<div class="wdiv">经典咖啡</div>
+	    		<div class="wdiv">醇香奶茶</div>
+	    		<div class="wdiv">维C果园</div>
+	    </div>
+	    <!--选择前-->
+		<div id="before" class="bottomnav" style="display: none;">
+			<span class="car">&#xe600;</span>
+			<h4>您还没有添加商品</h4>
+			<button>20起送</button>
+		</div>
+		<!--选择后-->
+		<div id="after" class="bottomnav">
+			<span class="car pay" id="carmnu">&#xe600;</span>
+			<span class="num">3</span>
+			<h4 class="price"><span class="rmb">¥</span>22</h4>
+			<button class="pay paybtn">去结算</button>
+		</div>
+		<!--遮罩-->
+		<div class="black" id="black"></div>
+		<!--提示框-->
+		<div class="ts" id="ts">
+			<div class="tst">
+				<h4>确定要清空购物车吗？</h4>
+			</div>
+			<div class="tstt">
+				<button class="q">取消</button>
+				<button class="o">确定</button>
+			</div>
+		</div>
+		<!--已选商品-->
+		<div class="goods" id="goods">
+			<h4>已选商品<span id="clear">清空购物车</span></h4>
+			<div class="goodslist">
+				<div class="goodslistone">
+					<span class="name">面条</span>
+					<span class="rmbprice">¥22</span>
+					<div class="plusand"><span class="plusjian">-</span><span class="nummb">1</span><span class="plusjia">+</span></div>
+				</div>
+				<div class="goodslistone">
+					<span class="name">面条</span>
+					<span class="rmbprice">¥22</span>
+					<div class="plusand"><span class="plusjian">-</span><span class="nummb">1</span><span class="plusjia">+</span></div>
+				</div>
+				<div class="goodslistone">
+					<span class="name">面条</span>
+					<span class="rmbprice">¥22</span>
+					<div class="plusand"><span class="plusjian">-</span><span class="nummb">1</span><span class="plusjia">+</span></div>
+				</div>
+				<div class="goodslistone">
+					<span class="name">面条</span>
+					<span class="rmbprice">¥22</span>
+					<div class="plusand"><span class="plusjian">-</span><span class="nummb">1</span><span class="plusjia">+</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		var leftmn=document.getElementsByClassName('left-mn');
+		var als=leftmn[0].getElementsByTagName('a');
+		var dls=document.getElementsByClassName('wdiv');
+		var carmnu=document.getElementById('carmnu');
+		var goods=document.getElementById('goods');
+		var black=document.getElementById('black');
+		var clear=document.getElementById('clear');
+		var ts=document.getElementById('ts');
+		var tstt=document.getElementsByClassName('tstt');
+		var btns=tstt[0].getElementsByTagName('button');
+		var before=document.getElementById('before');
+		var after=document.getElementById('after');
+		
+		
+		
+		for(var a=0;a<als.length;a++){
+			(function(index){
+				als[a].onclick=function(){
+					for(var b=0;b<als.length;b++){
+						als[b].className='';
+						dls[b].style.display='none';
+					}
+					als[index].className='ahover';
+					dls[index].style.display='block';
+				}
+			})(a);
+		}
+		//点击购物车图标显示和隐藏已选商品和半透明背景
+		carmnu.onclick=function(){
+			if(goods.style.display=="block"){
+				goods.style.display="none";
+				black.style.display="none";
+			}else{
+				goods.style.display="block";
+				black.style.display="block";
+				return false;
+			}
+		}
+		
+		//点击半透明背景收起已选商品
+		black.onclick=function(){
+			goods.style.display="none";
+			black.style.display="none";
+			ts.style.display="none";
+		}
+		//点击清空购物车弹出提示框
+		clear.onclick=function(){
+			black.style.display="block";
+			ts.style.display="block";
+		}
+		//点击取消按钮，收起已选商品和提示框
+		btns[0].onclick=function(){
+			goods.style.display="none";
+			black.style.display="none";
+			ts.style.display="none";
+		}
+		//点击确定按钮，清空已选商品
+		btns[1].onclick=function(){
+			goods.style.display="none";
+			black.style.display="none";
+			ts.style.display="none";
+			after.style.display="none";
+			before.style.display="block";
+		}
+	</script>
+</body>
+</html>
